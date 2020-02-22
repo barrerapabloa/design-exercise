@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Pablo Barrera: The New York Times(@nytimes)/Twitter</title>
-    <link rel="stylesheet" type="text/css" href="custom.css">
+    <title>The New York Times(@nytimes)/Twitter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   </head>
   <body>
     <div class="container-fluid">
@@ -309,7 +309,7 @@
                     View hidden replies
                   </a>
                 </div>
-                <button id="followMe" class="btn btn-md btn-primary rounded-pill">
+                <button class="btn btn-md btn-primary rounded-pill followMe">
                     Follow
               </button>
               </div>
@@ -336,12 +336,21 @@
             <div class="pt-3 pb-3 border-bottom border-gray-400">
               <span class="text-black-50">10:30 AM · Feb 21, 2020 ·</span>
               <a href="#">Twitter Ads Composer</a>
+              <div class="benefitText"><span class="beBold">The New York Times:</span> Your Ultimate Source for Breaking News, Sports, Music, Entertainment & Much More!</div>  
             </div>
             <div class="pt-3 pb-3 border-bottom border-gray-400">
               <b class="mr-1">2.4K</b>
               <a href="#" class="mr-3 text-black-50">Retweets</a>
               <b class="mr-1">13K</b>
               <a href="#" class="text-black-50">Likes</a>
+              <div class="progress">
+                <div class="progress-bar bg-primary" style="width:32%">
+                    Replies
+                  </div>
+                  <div class="progress-bar bg-info" style="width:68%">
+                    Likes
+                  </div>
+                </div>
             </div>
             <ul class="list-group list-group-horizontal text-center">
               <li class="border-0 list-group-item">
@@ -528,16 +537,19 @@
                 type="search"
                 class="form-control border-0 p-10 bg-transparent"
                 id="search"
-                placeholder="Search Twitter"
+                placeholder="Try &quot;House of Highlights&quot;"
                 aria-describedby="inputGroupPrepend"
               />
             </div>
           </form>
-          <aside class="card rounded-lg mb-4">
+          <aside class="card rounded-lg mb-4 followList">
             <div class="card-header bg-transparent">
               <h2>
-                Relevant People
+                <span class="beBold">Who To Follow</span>
               </h2>
+              <h3 class="subHeading">
+                People You Might Like
+            </h3>
             </div>
             <div class="card-body">
               <div class="form-row">
@@ -567,7 +579,7 @@
                     Follow
                   </button>
                   <br />
-                  <span class="text-black-50">@nytimes</span><br />
+                  <span class="text-black-50">@nytimes</span><span class="promoText"> - Promoted</span><br />
                   <p>
                     News tips? Share them here: http://nyti.ms/2FVHq9v "The
                     Weekly" is our new TV series. Episodes air Sundays at 10
@@ -576,11 +588,216 @@
                 </div>
               </div>
             </div>
+
+            <!-- Begin LA Times Card -->
+
+            <div class="card-body">
+              <div class="form-row">
+                <div class="col-2">
+                  <img
+                    class="img-fluid float-left rounded-circle"
+                    src="./assets/img/la-times.jpg"
+                    alt=""
+                    sizes=""
+                    srcset=""
+                  />
+                </div>
+                <div class="col-10">
+                  The Los Angeles Times
+                  <svg
+                    viewBox="0 0 24 24"
+                    aria-label="Verified account"
+                    class=""
+                  >
+                    <g>
+                      <path
+                        d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <button class="btn btn-sm btn-outline-primary rounded-pill">
+                    Follow
+                  </button>
+                  <br />
+                  <span class="text-black-50">@latimes</span><span class="suggestedText"> - Suggested</span><br />
+                  <p>
+                    Bringing L.A. to the world and the world to L.A.<br />Subscribe now: http://latimes.com/subscribe
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ends LA Times and Begin Washington Post -->
+
+            <div class="card-body">
+              <div class="form-row">
+                <div class="col-2">
+                  <img
+                    class="img-fluid float-left rounded-circle"
+                    src="./assets/img/w-post.jpg"
+                    alt=""
+                    sizes=""
+                    srcset=""
+                  />
+                </div>
+                <div class="col-10">
+                  The Washington Post
+                  <svg
+                    viewBox="0 0 24 24"
+                    aria-label="Verified account"
+                    class=""
+                  >
+                    <g>
+                      <path
+                        d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <button class="btn btn-sm btn-outline-primary rounded-pill">
+                    Follow
+                  </button>
+                  <br />
+                  <span class="text-black-50">@washingtonpost</span><span class="suggestedText"> - Suggested</span><br />
+                  <p>
+                    Breaking news, analysis, and opinion. Founded in 1877. Our staff on Twitter: https://twitter.com/i/lists/48978707
+                  </p>
+                </div>
+              </div>
+            </div>
           </aside>
-          <aside class="card rounded-lg mb-4">
+
+            <!-- End of Who To Follow, Start of Be Social -->
+
+          <aside class="card rounded-lg mb-4 friendsList">
+            <div class="card-header bg-transparent friendsHeader">
+              <h2 class="friendsText">
+                <span class="beBold">Be Social</span>
+              </h2>
+              <h3 class="subHeading2">
+                Your Friends & Favorites
+            </h3>
+            </div>
+            
+            <!-- Barack Obama -->
+
+            <div class="card-body">
+              <div class="form-row">
+                <div class="col-2">
+                  <img
+                    class="img-fluid float-left rounded-circle"
+                    src="./assets/img/obama.jpg"
+                    alt=""
+                    sizes=""
+                    srcset=""
+                  />
+                </div>
+                <div class="col-10">
+                  Barack Obama
+                  <svg
+                    viewBox="0 0 24 24"
+                    aria-label="Verified account"
+                    class=""
+                  >
+                    <g>
+                      <path
+                        d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <button class="btn btn-sm btn-success rounded-pill float-right">
+                    Online
+                  </button>
+                  <br />
+                  <span class="text-black-50">@BarackObama</span><span class="promoText"></span><br />
+                  <p>
+                    Dad, husband, President, citizen.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bernie Sanders -->
+
+            <div class="card-body">
+              <div class="form-row">
+                <div class="col-2">
+                  <img
+                    class="img-fluid float-left rounded-circle"
+                    src="./assets/img/bernie.png"
+                    alt=""
+                    sizes=""
+                    srcset=""
+                  />
+                </div>
+                <div class="col-10">
+                  Bernie Sanders
+                  <svg
+                    viewBox="0 0 24 24"
+                    aria-label="Verified account"
+                    class=""
+                  >
+                    <g>
+                      <path
+                        d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <button class="btn btn-sm btn-success rounded-pill float-right">
+                    Online
+                  </button>
+                  <br />
+                  <span class="text-black-50">@BernieSanders</span><span class="promoText"></span><br />
+                  <p>
+                    U.S. Senator from Vermont and candidate for President of the United States.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Don Lemon -->
+
+            <div class="card-body">
+              <div class="form-row">
+                <div class="col-2">
+                  <img
+                    class="img-fluid float-left rounded-circle"
+                    src="./assets/img/don-lemon.jpg"
+                    alt=""
+                    sizes=""
+                    srcset=""
+                  />
+                </div>
+                <div class="col-10">
+                  Don Lemon
+                  <svg
+                    viewBox="0 0 24 24"
+                    aria-label="Verified account"
+                    class=""
+                  >
+                    <g>
+                      <path
+                        d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <button class="btn btn-sm btn-secondary rounded-pill float-right">
+                    Active 3hrs ago
+                  </button>
+                  <br />
+                  <span class="text-black-50">@donlemon</span><span class="promoText"></span><br />
+                  <p>
+                    CNN Anchor & Twitter King..... Follow me on Instagram: http://Instagram.com/donlemoncnn
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </aside>
+
+          <aside class="card rounded-lg mb-4 trendsMe">
             <div class="card-header bg-transparent">
               <h2 class="text-left">
-                <span>Trends for you</span>
+                <span class="beBold">Trends for you</span>
               </h2>
               <div class="text-right">
                 <svg viewBox="0 0 24 24" class="right">
@@ -597,19 +814,19 @@
             </div>
             <ul class="list-group list-group-flush bg-transparent">
               <li class="list-group-item bg-transparent">
-                <a href="#"><b>#JSWR</b></a>
+                1 - <a href="#"><b>#AcademyAwards</b><br /><span class="promoText">Promoted By The New York Times</span></a>
               </li>
               <li class="list-group-item bg-transparent">
-                <a href="#"><b>#mondaythoughts</b></a>
+                2 - <a href="#"><b>#mondaythoughts</b></a>
               </li>
               <li class="list-group-item bg-transparent">
-                <a href="#"><b>#MondayMotivation</b></a>
+                3 - <a href="#"><b>#MondayMotivation</b></a>
               </li>
               <li class="list-group-item bg-transparent">
-                <a href="#"><b>Kanye</b></a>
+                4 - <a href="#"><b>Kanye</b></a>
               </li>
               <li class="list-group-item bg-transparent">
-                <a href="#"><b>Etoo</b></a>
+                5 - <a href="#"><b>Etoo</b></a>
               </li>
               <li class="list-group-item bg-transparent">
                 <a href="#" target="_blank">Show more</a>

@@ -165,11 +165,11 @@ main {
 
 .info-sidebar {
   form {
-    position: fixed;
+    position: relative;
     z-index: 500;
-    height: 53px;
+    height: 60px;
     background: #fff;
-    width: 27%;
+    width: 100%;
     .input-group {
       background: rgb(230, 236, 240);
       color: rgb(101, 119, 134);
@@ -203,7 +203,7 @@ main {
       }
     }
     &:nth-child(3) {
-      background: rgb(230, 236, 240);
+      background: #f5f8fa;
       h2 {
         display: inline-block;
         position: absolute;
@@ -228,4 +228,82 @@ main {
     z-index: 400;
     transform: translateY(-100%);
   }
+}
+
+/* Custom CSS by Pablo Barrera */
+
+.followMe {
+  width:105px;
+  margin-right:15px;
+}
+
+/* 
+
+.info-sidebar {
+  background-color: green;
+}
+
+*/
+
+.benefitText {
+  font-size:1rem;
+  margin-top:15px;
+}
+
+.beBold {
+  font-weight:bold;
+}
+
+.progress {
+  position: relative;
+  height:25px;
+  top:15px;
+  margin-bottom:20px;
+}
+
+.input-group {
+  position: relative;
+  top:25px;
+}
+
+.subHeading {
+  font-size:1.125rem;
+  font-weight:100;
+}
+
+.followList{
+  position: relative;
+  top:-15px;
+}
+
+.friendsHeader {
+  height:110px;
+}
+
+.friendsList{
+  position: relative;
+  top:-8px;
+}
+
+.friendsText{
+  position: relative;
+  top:15px;
+}
+
+.subHeading2 {
+  font-size:1.125rem;
+  font-weight:100;
+  position:relative;
+  top:50px;
+}
+
+.promoText {
+  font-size:0.75rem;
+  font-weight:bold;
+  color:#1da1f2;
+}
+
+.suggestedText {
+  font-size:0.75rem;
+  font-weight:bold;
 }
